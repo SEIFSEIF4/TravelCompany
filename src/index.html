@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سفرني</title>
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#"><img id="logo" src="./assets/images/Logo.png" width="50"> <span id="brandText" class="hidden">سفرني</span> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./trip.html"
+                  >الجولة السياحية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#towns">اماكن سياحية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tours">جولاتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contanct">تواصل معانا</a>
+              </li>
+            </ul>
+            <div class="login">
+              <i class="fa-solid fa-user"></i>
+              <div class="login-container">
+                <a href="./login.html" class="button">تسجيل الدخول</a>
+              </div>
+            </div>
+            <div class="login-button">
+              <a href="./login.html" class="button">تسجيل الدخول</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid parallax-container" id="parallaxContainer">
+        <div class="vingette"></div>
+        <img
+          src="./assets/images/background.png"
+          class="parallax bg-img"
+          data-speedx="0.08"
+          data-speedy="0.013"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="-200"
+        />
+        <img
+          src="./assets/images/mountain_10.png"
+          class="parallax mountain-10"
+          data-speedx="0.0195"
+          data-speedy="0.0305"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1100"
+        />
+        <img
+          src="./assets/images/fog_6.png"
+          class="parallax fog-6"
+          data-speedx="0.015"
+          data-speedy="0.028"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1400"
+        />
+        <img
+          src="./assets/images/mountain_9.png"
+          class="parallax mountain-9"
+          data-speedx="0.0125"
+          data-speedy="0.0055"
+          data-speedz="0.15"
+          data-rotation="0.2"
+          data-distance="1700"
+        />
+        <img
+          src="./assets/images/mountain_8.png"
+          class="parallax mountain-8"
+          data-speedx="0.01"
+          data-speedy="0.011"
+          data-speedz="0"
+          data-rotation="0.2"
+          data-distance="1800"
+        />
+        <img
+          src="./assets/images/fog_5.png"
+          class="parallax fog-5"
+          data-speedx="0.016"
+          data-speedy="0.0105"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1900"
+        />
+        <img
+          src="./assets/images/mountain_7.png"
+          class="parallax mountain-7"
+          data-speedx="0.01"
+          data-speedy="0.01"
+          data-speedz="0"
+          data-rotation="0.2"
+          data-distance="2000"
+        />
+        <div
+          class="text parallax"
+          data-speedx="0.02"
+          data-speedy="0.02"
+          data-speedz="0"
+          data-rotation="0.11"
+        >
+          <h2>شركة</h2>
+          <h1>سفرني</h1>
+        </div>
+        <img
+          src="./assets/images/mountain_6.png"
+          class="parallax mountain-6"
+          data-speedx="0.01"
+          data-speedy="0.01"
+          data-speedz="0"
+          data-rotation="0.2"
+          data-distance="2000"
+        />
+        <img
+          src="./assets/images/fog_4.png"
+          class="parallax fog-4"
+          data-speedx="0.0135"
+          data-speedy="0.032"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="2400"
+        />
+        <img
+          src="./assets/images/mountain_5.png"
+          class="parallax mountain-5"
+          data-speedx="0.0135"
+          data-speedy="0.0132"
+          data-speedz="0.13"
+          data-rotation="0.1"
+          data-distance="2550"
+        />
+        <img
+          src="./assets/images/fog_3.png"
+          class="parallax fog-3"
+          data-speedx="0.011"
+          data-speedy="0.0018"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="2800"
+        />
+        <img
+          src="./assets/images/mountain_4.png"
+          class="parallax mountain-4"
+          data-speedx="0.014"
+          data-speedy="0.014"
+          data-speedz="0.014"
+          data-rotation="0.14"
+          data-distance="3200"
+        />
+        <img
+          src="./assets/images/mountain_3.png"
+          class="parallax mountain-3"
+          data-speedx="0.004"
+          data-speedy="0.018"
+          data-speedz="0.008"
+          data-rotation="0.05"
+          data-distance="3400"
+        />
+        <img
+          src="./assets/images/fog_2.png"
+          class="parallax fog-2"
+          data-speedx="0.015"
+          data-speedy="0.0115"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="3600"
+        />
+        <img
+          src="./assets/images/mountain_2.png"
+          class="parallax mountain-2"
+          data-speedx="0.0235"
+          data-speedy="0.013"
+          data-speedz="0.22"
+          data-rotation="0.15"
+          data-distance="3800"
+        />
+        <img
+          src="./assets/images/mountain_1.png"
+          class="parallax mountain-1"
+          data-speedx="0.017"
+          data-speedy="0.018"
+          data-speedz="0.33"
+          data-rotation="0.2"
+          data-distance="4200"
+        />
+        <img src="./assets/images/sun_rays.png" class="sun-rays" />
+        <img src="./assets/images/black_shadow.png" class="black-shadow" />
+        <img
+          src="./assets/images/fog_1.png"
+          class="parallax fog-1"
+          data-speedx="0.010"
+          data-speedy="0.001"
+          data-speedz="0"
+          data-rotation="0.2"
+          data-distance="4200"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="service" id="service">
+        <div class="container">
+          <div class="text-heading">
+          <h1>خدماتنا</h1>
+          <p>كل الخدمات متوفرة</p>
+        </div>
+          <div class="row">
+            <div class="col-md-6 content">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="./assets/images/RentACar.png" width="80" alt="Rent a Car icon" />
+                </div>
+                <div class="flex-grow-1 me-3">
+                  <h4> حجز سيارة</h4>
+                  <p>نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 content">
+              <div class="d-flex">
+                <div class="flex-shrink-0 m-auto">
+                  <img src="./assets/images/hotel.png"  width="100" alt="hotel icon" />
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4>حجز سكن</h4>
+                  <p>
+                    نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 content">
+              <div class="d-flex">
+                <div class="flex-shrink-0 m-auto">
+                  <img src="./assets/images/world-tour-icon.png" width="80" alt="world-tour icon" />
+                </div>
+                <div class="flex-grow-1 me-3">
+                  <h4>جولات سياحية</h4>
+                  <p>
+                    جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية ولإنجليزية.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 content">
+              <div class="d-flex">
+                <div class="flex-shrink-0 m-auto">
+                  <img src="./assets/images/airport.png" width="100" alt="airport icon" />
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4>الاستقبال من المطار</h4>
+                  <p>
+                    .نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار .
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="towns" id="towns">
+        <div class="container most-visited">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="most-visited_text">
+                <h2>اعثر على المكان المثالي</h2>
+                <p>
+                  قائمة بأفضل أماكن سياحية يمكن رؤيتها فيها عالم مثالي لقضاء عطلة أو
+                  رحلة.
+                </p>
+                <button class="most-visited_button" id="expandBtn">عرض المزيد</button>
+              </div>
+            </div>
+            <div class="col-md-8" style="min-height: 350px">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/england.jpg" alt="england" />
+                    <div class="slider_content">
+                      <h3>انجلترا</h3>
+                      <p>انجلترا هي دولة تقع في أوروبا الغربية.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/india.jpg" alt="india" />
+                    <div class="slider_content">
+                      <h3>الهند</h3>
+                      <p>الهند هي دولة تقع في جنوب آسيا.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/istanbul.jpg" alt="istanbul" />
+                    <div class="slider_content">
+                      <h3>اسطنبول</h3>
+                      <p>اسطنبول هي مدينة تقع في تركيا.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/egypt.jpg" alt="egypt" />
+                    <div class="slider_content">
+                      <h3>مصر</h3>
+                      <p>
+                        مصر هي دولة عربية تقع في الركن الشمالي الشرقي من أفريقيا.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/france.jpg" alt="france" />
+                    <div class="slider_content">
+                      <h3>فرنسا</h3>
+                      <p>فرنسا هي دولة تقع في أوروبا الغربية.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/japan.jpg" alt="japan" />
+                    <div class="slider_content">
+                      <h3>اليابان</h3>
+                      <p>اليابان هي دولة تقع في شرق آسيا.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/italy.jpg" alt="italy" />
+                    <div class="slider_content">
+                      <h3>ايطاليا</h3>
+                      <p>ايطاليا هي دولة تقع في أوروبا الجنوبية.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/usa.jpg" alt="usa" />
+                    <div class="slider_content">
+                      <h3>الولايات المتحدة الأمريكية</h3>
+                      <p>
+                        الولايات المتحدة الأمريكية هي دولة تقع في أمريكا الشمالية.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/towns/russia.jpg" alt="russia" />
+                    <div class="slider_content">
+                      <h3>روسيا</h3>
+                      <p>روسيا هي دولة تقع في أوروبا الشرقية وآسيا الشمالية.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-button-prev"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-end">
+          <div class="row">
+            <div class="col-md-4 offers">
+              <div class="offer_img">
+                <img src="./assets/images/towns/egypt.jpg" alt="Egypt" />
+              </div>
+              <div class="offer_details">
+                <h2>الأهرامات</h2>
+                <p>القاهرة<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$80</span>
+                  <p>التصنيف : أثرى</p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers">
+              <div class="offer_img">
+                <img src="./assets/images/towns/japan.jpg" alt="" />
+              </div>
+              <div class="offer_details">
+                <h2>البرج الياباني</h2>
+                <p>اليابان<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$70</span>
+                  <p>التصنيف : أثرى</p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers">
+              <div class="offer_img">
+                <img src="./assets/images/towns/france.jpg" alt="France" />
+              </div>
+              <div class="offer_details">
+                <h2>برج ايفيل</h2>
+                <p>فرنسا<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p>التصنيف : راحة </p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/england.jpg" alt="England" />
+              </div>
+              <div class="offer_details">
+                <h2>إنكلترا</h2>
+                <p>إنكلترا<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p> استرخاء</p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/india.jpg" alt="India" />
+              </div>
+              <div class="offer_details">
+                <h2>الهند</h2>
+                <p>الهند<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p>راحة </p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/russia.jpg" alt="" />
+              </div>
+              <div class="offer_details">
+                <h2>روسيا</h2>
+                <p>روسيا
+                  <i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p>راحة </p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/usa.jpg" alt="usa" />
+              </div>
+              <div class="offer_details">
+                <h2>الولايات المتحدة الأمريكية</h2>
+                <p>الولايات المتحدة الأمريكية<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p>راحة </p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/italy.jpg" alt="italy" />
+              </div>
+              <div class="offer_details">
+                <h2>إيطاليا</h2>
+                <p>إيطاليا<i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p> استرخاء</p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 offers hidden">
+              <div class="offer_img">
+                <img src="./assets/images/towns/istanbul.jpg" height="193" alt="istanbul" />
+              </div>
+              <div class="offer_details">
+                <h2>اسطنبول</h2>
+                <p>اسطنبول
+                  <i class="fa-light fa-location-dot"></i></p>
+                <div class="offer_details-price">
+                  <span>$100</span>
+                  <p>راحة </p>
+                </div>
+                <div class="offer_details-paragraph">
+                  <p>
+                    ستخدام منشئ النص عبر الإنترنت ، يمكنك معالجة Lorem Ipsum الخاص
+                    بك بإثرائه بعناصر html التي تحدد هيكله ، مع إمكانية
+                  </p>
+                  <button>تفاصيل</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button id="expandBtn">Expand</button> -->
+        </div>
+      </section>
+      <section class="tours" id="tours">
+        <div class="container">
+          <div class="row">
+            <div class="text-heading">
+              <h1>جولاتنا</h1>
+              <p>جولاتنا السياحية</p>
+            </div>
+            <div class="col-md-12">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                    <div class="col-md-5">
+                      <img src="./assets/images/trips/trip-1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="col-md-7">
+                      <h5>جولة القاهرة</h5>
+                      <p>جولة القاهرة السياحية تشمل الأهرامات والمتحف المصري والسوق الخاص بالتحف والهدايا التذكارية والمطاعم الشعبية والمولات الشهيرة والمساجد والكنائس والمناطق السياحية الأخرى.</p>
+                      <p> تتصف أهرامات مصر الثلاثة بأنها أحد أهم عجائب الدنيا السبعة في جمهورية مصر تقع على هضبة الجيزة في محافظة الجيزة، أيضًا تقع على الضفة الغربية لنهر النيل، وهي تشمل ثلاثة أهرامات وهم خوفو، خفرع، منقرع، والتي بنيت قبل حوالي 25 قرنًا قبل الميلاد.
+                        وهي مقابر ملكية كل منها يحمل اسم الملك الذي بناه والذي دفن فيه. وأفضل الأنشطة التي يمكنكم القيام بها في هذه الرحلة: يمكنكم الاستمتاع بجولة على ظهر الجمل، إذ تستطيعوا استئجار جمل والقيام بجولة حول هذه الأهرامات لتروا ضخامتها وعظمة بناء هذه الأهرامات قبل آلاف السنين، وتستطيعوا التقاط أجمل الصور التذكارية هناك.
+                        </p>
+                        <a href="./trip.html">عرض االخطوات</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="row">
+                    <div class="col-md-5">
+                      <img src="./assets/images/trips/trip-2.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="col-12 tour-detail">
+                        <h2>رحلة إلى مدينة إسطنبول في تركيا</h2>
+                        <p>إسطنبول هي واحدة من أكبر و أجمل مدن تركيا وهي مصنفة ضمن أكثر المدن السياحية جذباً للسياح في العالم وتُعتبر إسطنبول الخيار الأول للسياح الذين يفكرون في الذهاب إلى تركيا. ستكون جولتنا في المعالم السياحية التالية:</p>
+                        <ul>
+                          <li>1. متحف آيا صوفيا: عُرف في العصر العُثماني باسم الجامع الكبير الشريف لآيا صوفيا، يقع على الضفة الأوروبيَّة في مدينة إسطنبول وهو من أشهر المعالم في تركيا التي يحرص الجميع على زيارتها أثناء جولات السياحة في إسطنبول.</li>
+                            <li>2. قصر توب كابي: من أفضل الأماكن السياحية في إسطنبول الموصي بزيارتها لمعرفة كيف كانت تُدار شئون الحياة والحكم في ظل الخلافة العثمانية بتركيا طيلة 4 قرون يستعرض المتحف العظيم أحداثها وتفاصيلها.</li>
+                            <!-- <li>3. برج غالاتا: برج غالاتا هو برج تاريخي عريق يُقال أنه بُنِي عام 507 م ثم تعرض البرج لزلزال قوي أثر عليه تأثيراً بالغًا، بعدها تم اعادة ترميمه وبُنِي على الطراز الرومانسكي في القرن الـ 14، وفي هذا الوقت كان أطول مبنى في اسطنبول.</li> -->
+                            <!-- <li>4. جامع أيوب سلطان: مسجد عثماني قديم موجود في منطقة أيوب في الجانب الأوروبي من مدينة إسطنبول، بالقرب من منطقة القرن الذهبي، ويقع خارج أسوار القسطنطينية، إذ بني المسجد عام 1458 أي بعد خمس سنوات من فتح القسطنطينية، وهو أول مسجد بناه المسلمون في إسطنبول بعد فتح القسطنطينية عام 1453.</li> -->
+                            <a href="./trip.html">عرض االخطوات</a>
+                          </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contanct" id="contanct">
+          <div class="row">
+            <div class="text-heading">
+              <h1>تواصل</h1>
+              <p>تواصل معنا للحصول على أي معلومات أو استفسارات</p>
+            </div>
+          </div>
+        <div class="container contanct-form">
+          <div class="row">
+          <div class="col-md-12 map">
+            <div class="overlay"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801999.0224063145!2d30.187028097712023!3d28.099896041793006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587ac8f291b%3A0x810c2f3fa2a52424!2sThe%20Great%20Pyramid%20of%20Giza!5e0!3m2!1sen!2str!4v1684942209818!5m2!1sen!2str" style="border:0; width:100%; height:300px;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+          <div class="content">
+            <div class="right-side">
+              <div class="topic-text">أرسل لنا رسالة</div>
+              <p>
+                إذا كنت بحاجة إلى أي مساعدة ، يمكنك إرسال رسالة إليّ من هنا. إنه لمن دواعي سروري أن أساعدك.
+                إذا كنت بحاجة إلى أي مساعدة ، يمكنك إرسال رسالة إليّ من هنا. إنه لمن دواعي سروري أن أساعدك.
+              </p>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="أدخل أسمك" required/>
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="أدخل بريدك الإلكتروني" required/>
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="أدخل رسالتك"></textarea>
+                </div>
+                <div class="button">
+                  <input type="button" value="ارسل الان" />
+                </div>
+              </form>
+            </div>
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">عنوان</div>
+                <div class="text-one">القاهرة, الجيزة</div>
+                <div class="text-two">الاهرمات 06</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">00 111 2222+</div>
+                <div class="text-two">00 111 2222+</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one"><a href="mailto:tempmail@maill.com?subject=Contact"></a>mail@gmail.com</div>
+                <div class="text-two"><a href="mailto:tempmail@maill.com?subject=Contact"></a>info@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            centeredSlides: true,
+            rewind: true,
+            zoom: true,
+            initialSlide: 1,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+  </body>
+</html>
+
