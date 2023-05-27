@@ -4,4 +4,6 @@ dist
 
 app
 
-editorconfig
+.editorconfig
+
+.vscode
