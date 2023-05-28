@@ -1,9 +1,9 @@
-node_modules
+node_modules/
 
-dist
+dist/
 
-app
+app/
 
-.editorconfig
+.editorconfig/
 
-.vscode
+.vscode/

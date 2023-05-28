@@ -118,5 +118,9 @@ module.exports = {
       filename: "login.html",
       template: "./src/login.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "signup.html",
+      template: "./src/signup.html",
+    }),
   ],
 };

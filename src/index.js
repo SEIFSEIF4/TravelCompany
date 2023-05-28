@@ -1,10 +1,8 @@
 window.bootstrap = require("bootstrap/dist/js/bootstrap.bundle.js");
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/js/all.min";
 import "./assets/css/style.css";
 import "../node_modules/normalize.css/normalize.css";
-import "@fortawesome/fontawesome-free/js/all.min";
-import "./assets/sass/style.scss";
-import "./assets/sass/pages/signup.scss";
 import gsap from "gsap";
 
 // Parllex Effect
@@ -49,7 +47,7 @@ window.addEventListener("mousemove", (e) => {
 
 if (window.innerWidth >= 725) {
   parallaxContainer.style.maxHeight = `${window.innerWidth * 0.6}px`;
-}else{
+} else {
   parallaxContainer.style.maxHeight = `${window.innerWidth * 1.6}px`;
 }
 
@@ -170,5 +168,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.getElementById("copyright").innerHTML =
-//   "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
+document.getElementById("copyright").innerHTML =
+  "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
