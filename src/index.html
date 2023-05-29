@@ -238,7 +238,7 @@
             <div class="col-md-6 content">
               <div class="d-flex">
                 <div class="flex-shrink-0">
-                  <img src="./assets/images/RentACar.png" width="80" alt="Rent a Car icon" />
+                  <img src="./assets/images/service-img/RentACar.png" width="80" alt="Rent a Car icon" />
                 </div>
                 <div class="flex-grow-1 me-3">
                   <h4> حجز سيارة</h4>
@@ -250,7 +250,7 @@
             <div class="col-md-6 content">
               <div class="d-flex">
                 <div class="flex-shrink-0 m-auto">
-                  <img src="./assets/images/hotel.png"  width="100" alt="hotel icon" />
+                  <img src="./assets/images/service-img/hotel.png"  width="100" alt="hotel icon" />
                 </div>
                 <div class="flex-grow-1 ms-3">
                   <h4>حجز سكن</h4>
@@ -263,7 +263,7 @@
             <div class="col-md-6 content">
               <div class="d-flex">
                 <div class="flex-shrink-0 m-auto">
-                  <img src="./assets/images/world-tour-icon.png" width="80" alt="world-tour icon" />
+                  <img src="./assets/images/service-img/world-tour-icon.png" width="80" alt="world-tour icon" />
                 </div>
                 <div class="flex-grow-1 me-3">
                   <h4>جولات سياحية</h4>
@@ -276,7 +276,7 @@
             <div class="col-md-6 content">
               <div class="d-flex">
                 <div class="flex-shrink-0 m-auto">
-                  <img src="./assets/images/airport.png" width="100" alt="airport icon" />
+                  <img src="./assets/images/service-img/airport.png" width="100" alt="airport icon" />
                 </div>
                 <div class="flex-grow-1 ms-3">
                   <h4>الاستقبال من المطار</h4>
@@ -689,25 +689,14 @@
         </div>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
-        <!-- Initialize Swiper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>     -->
         <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            centeredSlides: true,
-            rewind: true,
-            zoom: true,
-            initialSlide: 1,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
+          const parallaxContainer = document.getElementById("parallaxContainer");
+          if (window.innerWidth >= 725) {
+            parallaxContainer.style.maxHeight = `${window.innerWidth * 0.6}px`;
+          } else {
+            parallaxContainer.style.maxHeight = `${window.innerWidth * 1.6}px`;
+          }
         </script>
   </body>
 </html>

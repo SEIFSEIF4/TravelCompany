@@ -1,0 +1,109 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.navbar-small {
+  padding: 0 !important;
+  transition: all 0.5s;
+}
+
+header {
+  #brandText {
+    padding-right: 15px;
+  }
+  .navbar {
+    color: $white-color;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    &.white {
+      background-color: $white-color;
+      color: $black-color;
+      .nav-link {
+        color: $black-color;
+      }
+    }
+    &-brand {
+      color: $black-color;
+      font-size: 30px;
+    }
+
+    .nav-link {
+      color: $white-color;
+      font-size: 20px;
+      margin-right: 20px;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $white-color;
+        text-decoration: underline;
+      }
+      &.active {
+        color: $gray-color;
+        text-decoration: underline;
+        &.white {
+          color: $black-color;
+        }
+      }
+    }
+
+    .login {
+      position: relative;
+      padding-right: 10px;
+      i {
+        font-size: 30px;
+        margin-left: 15px;
+        color: $gray-color;
+        cursor: pointer;
+      }
+      &-container {
+        position: absolute;
+        width: 250px;
+        height: 80px;
+        background-color: transparent;
+        border: 1px solid $gray-color;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        top: 50px;
+        right: -115px;
+        visibility: hidden;
+        transition: all 0.5s;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 20px;
+          background-color: $white-color;
+          transform: rotate(45deg) translateX(50%);
+          top: -18px;
+          right: 50%;
+          border-top: 1px solid $gray-color;
+          border-left: 1px solid $gray-color;
+        }
+
+        .button {
+          @include button($gray-color, $white-color, $gray-color);
+          visibility: hidden;
+        }
+      }
+      &:hover {
+        .login-container {
+          visibility: visible;
+          .button {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .login-button {
+      .button {
+        @include button($main-color, $white-color, $main-color);
+        font-size: 16px;
+        width: 50%;
+        margin: 15px auto;
+        text-align: center;
+        display: none;
+      }
+    }
+  }
+}

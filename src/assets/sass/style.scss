@@ -1,6 +1,9 @@
 @use "./abstracts/variables" as *;
 @use "./abstracts/mixins" as *;
 
+
+@import "./layout/navBar.scss";
+
 @import "./pages/home";
 @import "./pages/trip";
 @import "./pages/login";
