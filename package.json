@@ -20,6 +20,7 @@
     "fast-blurhash": "^1.1.2",
     "favicons-webpack-plugin": "^6.0.0",
     "gsap": "^3.11.5",
+    "include-media": "^2.0.0",
     "normalize.css": "^8.0.1",
     "postcss-preset-env": "^8.3.2",
     "rtl-css-loader": "^1.0.1",

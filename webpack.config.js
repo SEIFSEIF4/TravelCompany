@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 module.exports = {
   entry: {
     app: "./src/index.js",
+    home: "./src/jsPages/home.js", // Update the file path
+    trip: "./src/jsPages/trip.js",
   },
   output: {
     publicPath: "/",
@@ -109,18 +110,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
+      chunks: ["app", "home"], // Include both "app" and "home" entry points
     }),
     new HtmlWebpackPlugin({
       filename: "trip.html",
       template: "./src/trip.html",
+      chunks: ["app", "trip"], // Include both "app" and "trip" entry points
     }),
     new HtmlWebpackPlugin({
       filename: "login.html",
       template: "./src/login.html",
+      chunks: ["app"], // Include only the "app" entry point
     }),
     new HtmlWebpackPlugin({
       filename: "signup.html",
       template: "./src/signup.html",
+      chunks: ["app"], // Include only the "app" entry point
     }),
   ],
 };

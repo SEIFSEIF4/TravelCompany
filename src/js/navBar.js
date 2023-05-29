@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (scrollPosition >= windowHeight) {
       navBar.classList.add("white");
       logo.src = "./assets/images/world-tour-icon.png";
-      // Fade in the brandText element using GSAP
+
       gsap.to(brandText, { opacity: 1, duration: 0.5, ease: "power2.out" });
     } else {
       navBar.classList.remove("white");

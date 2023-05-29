@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../../../../node_modules/include-media/dist/include-media";
 
 .trip-container {
   .overlay {
@@ -32,6 +33,11 @@
         background-color: $gray-color;
         border: 1px solid $black-color;
       }
+      @include media("<=tablet") {
+        height: 7px;
+        width: 7px;
+        margin: 5px 0;
+      }
     }
   }
   .carousel-inner {
@@ -45,6 +51,12 @@
       margin: auto;
       z-index: 100;
       color: $white-color;
+      @include media("<=desktop") {
+        font-size: 50px;
+      }
+      @include media("<=tablet") {
+        font-size: 30px;
+      }
     }
   }
   button.carousel-control-prev {
@@ -54,6 +66,9 @@
     color: white;
     width: 50px;
     right: 200px;
+    @include media("<=tablet") {
+      display: none;
+    }
   }
   button.carousel-control-next {
     top: auto;
@@ -62,15 +77,19 @@
     color: white;
     width: 50px;
     right: 100px;
+    @include media("<=tablet") {
+      display: none;
+    }
   }
 }
+
 .gallery-section {
   .text-heading {
     padding: 50px;
     @include text-heading(6.25rem, 1.25rem);
     padding-bottom: 35px;
     .choose {
-      margin-top: 15px;
+      margin-top: 35px;
       > a {
         background-color: $white-color;
         color: $black-color;
@@ -83,13 +102,23 @@
         min-width: 150px;
         margin-left: -2px;
         margin-right: -2px;
+        @include media("<=tablet") {
+          padding: 5px;
+          min-width: 70px;
+        }
         &:last-child {
           border-top-left-radius: 10px;
           border-bottom-left-radius: 10px;
+          @include media("<=tablet") {
+            border-radius: 0px;
+          }
         }
         &:first-child {
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
+          @include media("<=tablet") {
+            border-radius: 0px;
+          }
         }
         &:hover {
           background-color: $light-gray-color;
@@ -100,6 +129,7 @@
       }
     }
   }
+
   .gallery-container {
     direction: ltr;
     .gallery {
@@ -120,6 +150,15 @@
           object-fit: cover;
           width: 100%;
           cursor: pointer;
+          opacity: 0;
+          transform: translateY(20px);
+          filter: blur(5px);
+          &.appear {
+            opacity: 1;
+            transform: translateY(0px);
+            filter: blur(0px);
+            transition: 0.5s;
+          }
           &:hover {
             opacity: 0.8;
           }
@@ -135,6 +174,11 @@
           grid-column: span 3;
           grid-row: span 3;
           border: 5px solid $gray-color;
+          img{
+            opacity: 1;
+            transform: translateY(0px);
+            filter: blur(0);
+          }
         }
       }
     }

@@ -1,3 +1,5 @@
+@import "../../../../node_modules/include-media/dist/include-media";
+
 @mixin button($background-color, $color, $border-color) {
   background-color: $background-color;
   color: $color;
@@ -29,7 +31,6 @@
   }
 }
 
-
 @mixin text-heading($font_h1, $font_p) {
   h1 {
     font-size: $font_h1;
@@ -38,11 +39,52 @@
     color: #ebeced;
     letter-spacing: -0.1875rem;
     font-weight: 800;
+    @include media("<=tablet") {
+      font-size: 3.5rem;
+    }
+    @include media(">phone", "<=tablet") {
+      font-size: 2.5rem;
+    }
   }
   p {
     margin: -1.875rem 0 0;
     font-size: $font_p;
     text-align: center;
     color: #797979;
+    @include media("<=tablet") {
+      font-size: 1rem;
+      margin: -1rem 0 0;
+    }
+    @include media(">phone", "<=tablet") {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@mixin scrollbars(
+  $size,
+  $radius,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
   }
 }

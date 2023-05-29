@@ -133,7 +133,29 @@ header .navbar .login-button .button:hover {
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b1aeae rgba(255, 255, 255, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b1aeae;
+  border-radius: 0px;
+  border: 0px solid rgba(255, 255, 255, 0);
 }
 
 body {
@@ -337,11 +359,32 @@ section.service .container .text-heading h1 {
   letter-spacing: -0.1875rem;
   font-weight: 800;
 }
+@media (max-width: 768px) {
+  section.service .container .text-heading h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.service .container .text-heading h1 {
+    font-size: 2.5rem;
+  }
+}
 section.service .container .text-heading p {
   margin: -1.875rem 0 0;
   font-size: 1.25rem;
   text-align: center;
   color: #797979;
+}
+@media (max-width: 768px) {
+  section.service .container .text-heading p {
+    font-size: 1rem;
+    margin: -1rem 0 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.service .container .text-heading p {
+    font-size: 0.7rem;
+  }
 }
 section.service .container .row .col-md-6:nth-child(even) {
   direction: ltr;
@@ -383,11 +426,32 @@ section.tours .container .text-heading h1 {
   letter-spacing: -0.1875rem;
   font-weight: 800;
 }
+@media (max-width: 768px) {
+  section.tours .container .text-heading h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.tours .container .text-heading h1 {
+    font-size: 2.5rem;
+  }
+}
 section.tours .container .text-heading p {
   margin: -1.875rem 0 0;
   font-size: 1.25rem;
   text-align: center;
   color: #797979;
+}
+@media (max-width: 768px) {
+  section.tours .container .text-heading p {
+    font-size: 1rem;
+    margin: -1rem 0 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.tours .container .text-heading p {
+    font-size: 0.7rem;
+  }
 }
 section.tours .tour-detail ul {
   margin-top: 20px;
@@ -573,11 +637,32 @@ section.contanct .text-heading h1 {
   letter-spacing: -0.1875rem;
   font-weight: 800;
 }
+@media (max-width: 768px) {
+  section.contanct .text-heading h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.contanct .text-heading h1 {
+    font-size: 2.5rem;
+  }
+}
 section.contanct .text-heading p {
   margin: -1.875rem 0 0;
   font-size: 1.25rem;
   text-align: center;
   color: #797979;
+}
+@media (max-width: 768px) {
+  section.contanct .text-heading p {
+    font-size: 1rem;
+    margin: -1rem 0 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  section.contanct .text-heading p {
+    font-size: 0.7rem;
+  }
 }
 section.contanct .container.contanct-form {
   width: 85%;
@@ -633,11 +718,11 @@ section.contanct .content .left-side .details .topic {
 }
 section.contanct .content .left-side .details .text-one {
   font-size: 14px;
-  color: #fff;
+  color: #b1aeae;
 }
 section.contanct .content .left-side .details .text-two {
   font-size: 14px;
-  color: #fff;
+  color: #b1aeae;
 }
 section.contanct .content .right-side .topic-text {
   font-size: 23px;
@@ -679,6 +764,7 @@ section.contanct .right-side .button {
   display: inline-block;
   margin-top: 12px;
   border: 0;
+  transition: 1s;
 }
 section.contanct .right-side .button input[type=button] {
   color: #fff;
@@ -689,12 +775,7 @@ section.contanct .right-side .button input[type=button] {
   border-radius: 6px;
   background: #b1aeae;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-section.contanct .button input[type=button]:hover {
-  background: transparent;
-  color: #b1aeae;
-  border: 1px solid #b1aeae;
+  transition: all 1s ease;
 }
 @media (max-width: 950px) {
   section.contanct .container.contanct-form {
@@ -761,6 +842,13 @@ section.contanct .button input[type=button]:hover {
   background-color: #b1aeae;
   border: 1px solid #000;
 }
+@media (max-width: 768px) {
+  .trip-container .carousel-indicators button {
+    height: 7px;
+    width: 7px;
+    margin: 5px 0;
+  }
+}
 .trip-container .carousel-inner {
   max-height: 100dvh;
 }
@@ -774,6 +862,16 @@ section.contanct .button input[type=button]:hover {
   z-index: 100;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .trip-container .carousel-inner .carousel-text {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .trip-container .carousel-inner .carousel-text {
+    font-size: 30px;
+  }
+}
 .trip-container button.carousel-control-prev {
   top: auto;
   bottom: 45px;
@@ -782,6 +880,11 @@ section.contanct .button input[type=button]:hover {
   width: 50px;
   right: 200px;
 }
+@media (max-width: 768px) {
+  .trip-container button.carousel-control-prev {
+    display: none;
+  }
+}
 .trip-container button.carousel-control-next {
   top: auto;
   bottom: 45px;
@@ -789,6 +892,11 @@ section.contanct .button input[type=button]:hover {
   color: white;
   width: 50px;
   right: 100px;
+}
+@media (max-width: 768px) {
+  .trip-container button.carousel-control-next {
+    display: none;
+  }
 }
 
 .gallery-section .text-heading {
@@ -803,14 +911,35 @@ section.contanct .button input[type=button]:hover {
   letter-spacing: -0.1875rem;
   font-weight: 800;
 }
+@media (max-width: 768px) {
+  .gallery-section .text-heading h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .gallery-section .text-heading h1 {
+    font-size: 2.5rem;
+  }
+}
 .gallery-section .text-heading p {
   margin: -1.875rem 0 0;
   font-size: 1.25rem;
   text-align: center;
   color: #797979;
 }
+@media (max-width: 768px) {
+  .gallery-section .text-heading p {
+    font-size: 1rem;
+    margin: -1rem 0 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .gallery-section .text-heading p {
+    font-size: 0.7rem;
+  }
+}
 .gallery-section .text-heading .choose {
-  margin-top: 15px;
+  margin-top: 35px;
 }
 .gallery-section .text-heading .choose > a {
   background-color: #fff;
@@ -825,13 +954,29 @@ section.contanct .button input[type=button]:hover {
   margin-left: -2px;
   margin-right: -2px;
 }
+@media (max-width: 768px) {
+  .gallery-section .text-heading .choose > a {
+    padding: 5px;
+    min-width: 70px;
+  }
+}
 .gallery-section .text-heading .choose > a:last-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+@media (max-width: 768px) {
+  .gallery-section .text-heading .choose > a:last-child {
+    border-radius: 0px;
+  }
+}
 .gallery-section .text-heading .choose > a:first-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media (max-width: 768px) {
+  .gallery-section .text-heading .choose > a:first-child {
+    border-radius: 0px;
+  }
 }
 .gallery-section .text-heading .choose > a:hover {
   background-color: #f0f0f0;
@@ -862,6 +1007,15 @@ section.contanct .button input[type=button]:hover {
   object-fit: cover;
   width: 100%;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+}
+.gallery-section .gallery-container .gallery .gallery__item > img.appear {
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0px);
+  transition: 0.5s;
 }
 .gallery-section .gallery-container .gallery .gallery__item > img:hover {
   opacity: 0.8;
@@ -876,6 +1030,11 @@ section.contanct .button input[type=button]:hover {
   grid-column: span 3;
   grid-row: span 3;
   border: 5px solid #b1aeae;
+}
+.gallery-section .gallery-container .gallery .gallery__item--lg img {
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0);
 }
 
 form .button {

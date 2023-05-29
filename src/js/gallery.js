@@ -1,3 +1,4 @@
+const choosedImg = document.querySelector(".gallery__item--lg");
 document.addEventListener("DOMContentLoaded", function () {
   const galleryItems = document.querySelectorAll(".gallery__item");
 
@@ -16,8 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Set negative order on the clicked gallery item
       if (this.classList.contains("gallery__item--lg")) {
         this.style.order = -1;
+        
+        // Scroll to the chosen image
+        this.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
 });
-
