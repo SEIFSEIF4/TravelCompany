@@ -5,25 +5,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const logo = document.getElementById("logo");
   const brandText = document.getElementById("brandText");
   const windowHeight = window.innerHeight;
+  const header = document.querySelector(".header");
 
   window.addEventListener("scroll", function () {
     var scrollPosition =
       window.pageYOffset || document.documentElement.scrollTop;
 
-    // Check if the scroll position has reached 100vh
-    if (scrollPosition >= windowHeight) {
+    // Check if the scroll position has reached the header's height
+    if (scrollPosition >= header.offsetHeight) {
+      console.log(header.offsetHeight);
       navBar.classList.add("white");
       logo.src = "./assets/images/world-tour-icon.png";
 
       gsap.to(brandText, { opacity: 1, duration: 0.5, ease: "power2.out" });
     } else {
+      console.log(header.offsetHeight);
       navBar.classList.remove("white");
       logo.src = "./assets/images/Logo.png";
 
       // Fade out the brandText element using GSAP
       gsap.to(brandText, { opacity: 0, duration: 1, ease: "power2.out" });
 
-      // Fade in from the right when below 100vh
+      // Fade in from the right when below the header's height
       gsap.from(brandText, { x: "50%", duration: 0.5, ease: "power2.out" });
       gsap.to(brandText, { x: "0%", duration: 0.5, ease: "power2.out" });
     }

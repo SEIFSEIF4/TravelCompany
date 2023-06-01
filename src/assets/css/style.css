@@ -133,6 +133,7 @@ header .navbar .login-button .button:hover {
 }
 
 html {
+  overflow: overlay;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -267,12 +268,22 @@ body {
   left: calc(50% + 835px);
   width: 419px;
 }
+@media (min-width: 1921px) {
+  .parallax-container .mountain-3 {
+    left: calc(50% + 1090px);
+  }
+}
 .parallax-container .fog-6 {
   z-index: 4;
   top: calc(50% + 177px);
   left: calc(50% - 30px);
   width: 2300px;
   opacity: 0.5;
+}
+@media (min-width: 1921px) {
+  .parallax-container .fog-6 {
+    width: 2800px;
+  }
 }
 .parallax-container .mountain-2 {
   z-index: 17;
@@ -286,6 +297,11 @@ body {
   left: calc(50% - 850px);
   width: 450px;
 }
+@media (min-width: 1921px) {
+  .parallax-container .mountain-1 {
+    left: calc(50% - 1150px);
+  }
+}
 .parallax-container .text {
   z-index: 9;
   top: calc(50% - 130px);
@@ -294,16 +310,31 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .parallax-container .text {
+    top: calc(50% - 15px);
+  }
+}
 .parallax-container .text h2 {
   font-weight: 100;
   font-size: 8rem;
   line-height: 0.88;
+}
+@media (max-width: 768px) {
+  .parallax-container .text h2 {
+    font-size: 4rem;
+  }
 }
 .parallax-container .text h1 {
   margin-top: 25px;
   font-weight: 800;
   font-size: 12rem;
   line-height: 0.88;
+}
+@media (max-width: 768px) {
+  .parallax-container .text h1 {
+    font-size: 6rem;
+  }
 }
 .parallax-container .sun-rays {
   position: absolute;
@@ -324,6 +355,11 @@ body {
   width: 1920px;
   top: calc(100% - 355px);
   left: 50%;
+}
+@media (min-width: 1921px) {
+  .parallax-container .fog-1 {
+    width: 2500px;
+  }
 }
 .parallax-container .parallax {
   pointer-events: none;
@@ -346,7 +382,12 @@ section:nth-child(odd) {
 }
 
 section.service {
-  padding: 200px 0;
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  section.service {
+    padding: 50px 0;
+  }
 }
 section.service .container .text-heading {
   padding: 50px;
@@ -361,12 +402,12 @@ section.service .container .text-heading h1 {
 }
 @media (max-width: 768px) {
   section.service .container .text-heading h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 321px) and (max-width: 768px) {
   section.service .container .text-heading h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 section.service .container .text-heading p {
@@ -413,7 +454,12 @@ section.service .container .row .d-flex p {
 }
 
 section.tours {
-  padding: 200px 0;
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  section.tours {
+    padding: 50px 0;
+  }
 }
 section.tours .container .text-heading {
   padding: 50px;
@@ -428,12 +474,12 @@ section.tours .container .text-heading h1 {
 }
 @media (max-width: 768px) {
   section.tours .container .text-heading h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 321px) and (max-width: 768px) {
   section.tours .container .text-heading h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 section.tours .container .text-heading p {
@@ -473,9 +519,18 @@ section.tours .carousel.slide a:hover {
   background-color: #fff;
   color: #b1aeae;
 }
+section.tours .carousel-item h5 {
+  padding: 15px 10px;
+  font-weight: 800;
+}
 
 section.towns {
   padding: 100px 0;
+}
+@media (max-width: 768px) {
+  section.towns {
+    padding: 50px 0;
+  }
 }
 section.towns .swiper {
   width: 100%;
@@ -504,6 +559,11 @@ section.towns .swiper-slide:hover .slider_content {
 }
 section.towns .container.most-visited .most-visited_text {
   padding: 1rem;
+}
+@media (max-width: 768px) {
+  section.towns .container.most-visited .most-visited_text {
+    padding-bottom: 3rem;
+  }
 }
 section.towns .container.most-visited .most-visited_text h2 {
   font-size: 3rem;
@@ -548,6 +608,11 @@ section.towns .swiper-button-next {
   background-color: #b1aeae;
   color: #fff;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  section.towns .swiper-button-next {
+    display: none;
+  }
 }
 section.towns .container .offers {
   margin: 15px 0;
@@ -639,12 +704,12 @@ section.contanct .text-heading h1 {
 }
 @media (max-width: 768px) {
   section.contanct .text-heading h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 321px) and (max-width: 768px) {
   section.contanct .text-heading h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 section.contanct .text-heading p {
@@ -692,6 +757,19 @@ section.contanct .container.contanct-form .content .left-side {
 section.contanct .container.contanct-form .content .right-side {
   width: 75%;
   margin-left: 75px;
+}
+@media (max-width: 320px) {
+  section.contanct .container.contanct-form .content .right-side {
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+section.contanct .container.contanct-form .content .right-side p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 section.contanct .content .left-side::before {
   content: "";
@@ -913,12 +991,12 @@ section.contanct .right-side .button input[type=button] {
 }
 @media (max-width: 768px) {
   .gallery-section .text-heading h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 321px) and (max-width: 768px) {
   .gallery-section .text-heading h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 .gallery-section .text-heading p {

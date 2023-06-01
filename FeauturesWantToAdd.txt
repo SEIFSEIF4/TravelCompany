@@ -1,10 +1,10 @@
 footer
+@Media to towns Swiper to sm device !done
+form validate !done //needs bootstrap
+nav auto height detect !done
+lower img size with tiny PNG for trip images !done
 better section tours styling
 Advance css to service section
-@Media to towns Swiper to sm device
 better colors
 better sass filles 
-form validate
-nav auto height detect
 BlurHashValue to trip images
-lower img size with tiny PNG for trip images

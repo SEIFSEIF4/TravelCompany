@@ -11,7 +11,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <header>
+    <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
           <a class="navbar-brand d-flex" href="#"><img id="logo" src="./assets/images/Logo.png" width="50"> <span id="brandText" class="hidden">سفرني</span> </a>
@@ -59,6 +59,9 @@
         </div>
       </nav>
       <div class="container-fluid parallax-container" id="parallaxContainer" style="max-width: 100dvw;">
+        <!-- <div id="altParallax" style="z-index: 100; position: relative; display: none;">
+          <img src="./assets/images/altParallax.jpg" alt="" style="min-width: 100vw;">
+        </div> -->
         <div class="vingette"></div>
         <img
           src="./assets/images/background.png"
@@ -603,7 +606,7 @@
                     </div>
                     <div class="col-md-7">
                       <div class="col-12 tour-detail">
-                        <h2>رحلة إلى مدينة إسطنبول في تركيا</h2>
+                        <h5>رحلة إلى مدينة إسطنبول في تركيا</h5>
                         <p>إسطنبول هي واحدة من أكبر و أجمل مدن تركيا وهي مصنفة ضمن أكثر المدن السياحية جذباً للسياح في العالم وتُعتبر إسطنبول الخيار الأول للسياح الذين يفكرون في الذهاب إلى تركيا. ستكون جولتنا في المعالم السياحية التالية:</p>
                         <ul>
                           <li>1. متحف آيا صوفيا: عُرف في العصر العُثماني باسم الجامع الكبير الشريف لآيا صوفيا، يقع على الضفة الأوروبيَّة في مدينة إسطنبول وهو من أشهر المعالم في تركيا التي يحرص الجميع على زيارتها أثناء جولات السياحة في إسطنبول.</li>
@@ -650,13 +653,16 @@
                 إذا كنت بحاجة إلى أي مساعدة ، يمكنك إرسال رسالة إليّ من هنا. إنه لمن دواعي سروري أن أساعدك.
                 إذا كنت بحاجة إلى أي مساعدة ، يمكنك إرسال رسالة إليّ من هنا. إنه لمن دواعي سروري أن أساعدك.
               </p>
-              <form action="#">
+              <form action="#" class="needs-validation was-validated" novalidate>
                 <div class="input-box">
                   <input type="text" placeholder="أدخل أسمك" required/>
                 </div>
                 <div class="input-box">
                   <input type="text" placeholder="أدخل بريدك الإلكتروني" required/>
                 </div>
+                <div class="invalid-feedback">
+                  عذرًا يرجى إدخال البريد الإلكتروني
+              </div>
                 <div class="input-box message-box">
                   <textarea placeholder="أدخل رسالتك"></textarea>
                 </div>
@@ -689,14 +695,6 @@
         </div>
       </section>
     </main>
-        <script>
-          const parallaxContainer = document.getElementById("parallaxContainer");
-          if (window.innerWidth >= 725) {
-            parallaxContainer.style.maxHeight = `${window.innerWidth * 0.6}px`;
-          } else {
-            parallaxContainer.style.maxHeight = `${window.innerWidth * 1.6}px`;
-          }
-        </script>
   </body>
 </html>
 

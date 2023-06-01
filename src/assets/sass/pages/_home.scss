@@ -42,6 +42,10 @@ html {
   border: 0px solid rgba(255, 255, 255, 0);
 }
 
+.hide-scrollbar {
+  overflow: hidden !important;
+}
+
 body {
   font-family: $font-family_1;
 }
@@ -149,6 +153,9 @@ body {
     top: calc(50% + 133px);
     left: calc(50% + 835px);
     width: 419px;
+    @include media('>LGdesktop') {
+      left: calc(50% + 1090px);
+    }
   }
   .fog-6 {
     z-index: 4;
@@ -156,6 +163,9 @@ body {
     left: calc(50% - 30px);
     width: 2300px;
     opacity: 0.5;
+    @include media('>LGdesktop') {
+      width: 2800px;
+    }
   }
   .mountain-2 {
     z-index: 17;
@@ -168,6 +178,9 @@ body {
     top: calc(50% + 150px);
     left: calc(50% - 850px);
     width: 450px;
+    @include media('>LGdesktop') {
+      left: calc(50% - 1150px);
+    }
   }
   .text {
     z-index: 9;
@@ -176,16 +189,25 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: $white-color;
+    @include media(">=tablet") {
+      top: calc(50% - 15px);
+    }
     h2 {
       font-weight: 100;
       font-size: 8rem;
       line-height: 0.88;
+      @include media("<=tablet") {
+        font-size: 4rem;
+      }
     }
     h1 {
       margin-top: 25px;
       font-weight: 800;
       font-size: 12rem;
       line-height: 0.88;
+      @include media("<=tablet") {
+        font-size: 6rem;
+      }
     }
   }
   .sun-rays {
@@ -207,6 +229,9 @@ body {
     width: 1920px;
     top: calc(100% - 355px);
     left: 50%;
+    @include media('>LGdesktop') {
+      width: 2500px;
+    }
   }
   .parallax {
     pointer-events: none;
@@ -234,7 +259,10 @@ section:nth-child(odd) {
 }
 
 section.service {
-  padding: 200px 0;
+  padding: 100px 0;
+  @include media("<=tablet") {
+    padding: 50px 0;
+  }
   .container {
     .text-heading {
       padding: 50px;
@@ -271,7 +299,10 @@ section.service {
 }
 
 section.tours {
-  padding: 200px 0;
+  padding: 100px 0;
+  @include media("<=tablet") {
+    padding: 50px 0;
+  }
   .container {
     .text-heading {
       padding: 50px;
@@ -292,10 +323,19 @@ section.tours {
       @include button($gray-color, $white-color, $gray-color);
     }
   }
+  .carousel-item {
+    h5 {
+      padding: 15px 10px;
+      font-weight: 800;
+    }
+  }
 }
 
 section.towns {
   padding: 100px 0;
+  @include media("<=tablet") {
+    padding: 50px 0;
+  }
   .swiper {
     width: 100%;
     height: 100%;
@@ -326,6 +366,9 @@ section.towns {
   .container.most-visited {
     .most-visited_text {
       padding: 1rem;
+      @include media("<=tablet") {
+        padding-bottom: 3rem;
+      }
       h2 {
         font-size: 3rem;
         font-weight: 600;
@@ -361,6 +404,9 @@ section.towns {
     background-color: $gray-color;
     color: $white-color;
     border-radius: 50%;
+    @include media("<=tablet") {
+      display: none;
+    }
   }
 
   .container {
@@ -431,7 +477,6 @@ section.towns {
     }
   }
 }
-$color_2: #afafb6;
 
 section.contanct {
   padding: 100px 0;
@@ -466,6 +511,17 @@ section.contanct {
       .right-side {
         width: 75%;
         margin-left: 75px;
+        @include media("<=phone") {
+          text-align: center;
+          padding-top: 1rem;
+        }
+        p {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
       }
     }
   }
