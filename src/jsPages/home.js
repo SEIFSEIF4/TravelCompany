@@ -1,4 +1,5 @@
-
+import AOS from 'aos';
+AOS.init();
 import "../js/parallaxContainer";
 import "../js/parallaxImages";
 import "../js/parllexEffect";
