@@ -13,15 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if the scroll position has reached the header's height
     if (scrollPosition >= header.offsetHeight) {
-      console.log(header.offsetHeight);
       navBar.classList.add("white");
       logo.src = "./assets/images/world-tour-icon.png";
 
       gsap.to(brandText, { opacity: 1, duration: 0.5, ease: "power2.out" });
     } else {
-      console.log(header.offsetHeight);
       navBar.classList.remove("white");
-      logo.src = "./assets/images/Logo.png";
+      logo.src = "../assets/images/Logo.png";
 
       // Fade out the brandText element using GSAP
       gsap.to(brandText, { opacity: 0, duration: 1, ease: "power2.out" });

@@ -116,6 +116,60 @@ header .navbar .login-button .button:hover {
   color: #b1aeae;
 }
 
+.footer-basic {
+  padding: 20px 0;
+  background-color: #b1aeae;
+  color: #f0f0f0;
+}
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.footer-basic ul a {
+  color: #f0f0f0;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+.footer-basic li {
+  padding: 0 10px;
+}
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 8px;
+  color: #f0f0f0;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+  transform: translateY(3px);
+}
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #f0f0f0;
+  margin-bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -157,6 +211,10 @@ html {
   background-color: #b1aeae;
   border-radius: 0px;
   border: 0px solid rgba(255, 255, 255, 0);
+}
+
+.hide-scrollbar {
+  overflow: hidden !important;
 }
 
 body {

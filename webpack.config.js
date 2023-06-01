@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 module.exports = {
   entry: {
     app: "./src/index.js",
@@ -126,6 +127,26 @@ module.exports = {
       filename: "signup.html",
       template: "./src/signup.html",
       chunks: ["app"], // Include only the "app" entry point
+    }),
+    new HtmlWebpackPlugin({
+      filename: "components/navBar.html",
+      template: "./src/components/navBar.html",
+      chunks: ["home", "trip"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "components/footer.html",
+      template: "./src/components/footer.html",
+      chunks: ["home", "trip"],
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.join(__dirname, "./src/components/navBar.html"),
+      location: "navBar",
+      template_filename: ["index.html", "trip.html"],
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.join(__dirname, "./src/components/footer.html"),
+      location: "footer",
+      template_filename: ["index.html", "trip.html"],
     }),
   ],
 };

@@ -1,2 +1,1 @@
-document.getElementById("copyright").innerHTML =
-  "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
+document.getElementById("currentYear").textContent = new Date().getFullYear();
