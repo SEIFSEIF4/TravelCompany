@@ -1,12 +1,12 @@
-footer
+footer  !done
 @Media to towns Swiper to sm device !done
 @Media to trip & home !done
 form validate !done //needs bootstrap
 nav auto height detect !done
 lower img size with tiny PNG for trip images !done
+Components !done
 better section tours styling
 Advance css to service section
 better colors
 better sass filles 
 BlurHashValue to trip images
-Components !done
