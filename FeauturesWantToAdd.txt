@@ -5,8 +5,8 @@ form validate !done //needs bootstrap
 nav auto height detect !done
 lower img size with tiny PNG for trip images !done
 Components !done
-better section tours styling
+better section tours styling !done
+better sass filles  !done
 Advance css to service section
 better colors
-better sass filles 
 BlurHashValue to trip images
