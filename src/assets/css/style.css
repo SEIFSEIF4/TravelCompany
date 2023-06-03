@@ -160,7 +160,7 @@ header .navbar .login-button .button:hover {
 }
 .footer-basic .social > a:hover {
   opacity: 0.9;
-  transform: translateY(3px);
+  transform: translateY(-3px);
 }
 .footer-basic .copyright {
   margin-top: 15px;
@@ -373,6 +373,11 @@ body {
     top: calc(50% - 15px);
   }
 }
+@media (max-width: 320px) {
+  .parallax-container .text {
+    margin-top: 25%;
+  }
+}
 .parallax-container .text h2 {
   font-weight: 100;
   font-size: 8rem;
@@ -564,7 +569,7 @@ section.tours .tour-detail ul {
 section.tours .tour-detail ul li {
   padding: 10px 0;
 }
-section.tours .carousel.slide a {
+section.tours .carousel.slide a.steps {
   background-color: #b1aeae;
   color: #fff;
   border: 1px solid #b1aeae;
@@ -572,14 +577,110 @@ section.tours .carousel.slide a {
   border-radius: 5px;
   transition: all 0.5s;
   text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 43%;
 }
-section.tours .carousel.slide a:hover {
+section.tours .carousel.slide a.steps:hover {
   background-color: #fff;
   color: #b1aeae;
+}
+@media (max-width: 1024px) {
+  section.tours .carousel.slide a.steps {
+    display: none;
+  }
 }
 section.tours .carousel-item h5 {
   padding: 15px 10px;
   font-weight: 800;
+}
+section.tours .carousel-item img {
+  --color: #b1aeae; /* the border color */
+  --border: 10px; /* the border thickness*/
+  --offset: 20px; /* control the offset*/
+  --gap: 5px; /* the gap on hover */
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+  --_o: calc(3*var(--offset));
+  padding: calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o), linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  filter: grayscale(0.4);
+  transition: 0.5s;
+  cursor: pointer;
+}
+section.tours .carousel-item img:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}
+section.tours .js-carousel-item-istanbul h1.typeStyle {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 20px;
+}
+section.tours .js-carousel-item-istanbul h1.typeStyle .hi {
+  display: inline-block;
+}
+section.tours .js-carousel-item-istanbul h1.typeStyle .-js-typeStyle-txt {
+  font-weight: normal;
+}
+section.tours .js-carousel-item-istanbul h1.typeStyle .box {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  background: #b1aeae;
+  z-index: -1;
+  width: 20vw;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  section.tours .js-carousel-item-istanbul h1.typeStyle .box {
+    width: 27dvw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.tours .js-carousel-item-istanbul h1.typeStyle .box {
+    width: 37dvw;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  section.tours .js-carousel-item-istanbul h1.typeStyle .box {
+    width: 50vw;
+    height: 4vw !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  section.tours .js-carousel-item-istanbul h1.typeStyle .box {
+    width: 90%;
+  }
+}
+section.tours .carousel-control-next {
+  top: 300px !important;
+  right: auto !important;
+  left: 5% !important;
+  background-color: #b1aeae;
+  color: #f0f0f0;
+  max-height: 15%;
+  width: 4%;
+}
+@media (max-width: 1024px) {
+  section.tours .carousel-control-next {
+    display: none;
+  }
+}
+section.tours .carousel-control-prev {
+  top: 300px !important;
+  background-color: #b1aeae;
+  color: #f0f0f0;
+  max-height: 15%;
+  width: 4%;
+}
+@media (max-width: 1024px) {
+  section.tours .carousel-control-prev {
+    display: none;
+  }
 }
 
 section.towns {

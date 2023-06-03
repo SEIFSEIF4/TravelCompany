@@ -7,10 +7,10 @@ if (window.innerWidth >= 725) {
   // Check if the window width is greater than 1440 pixels
   if (window.innerWidth > 1440) {
     // Calculate the maximum height as the minimum value between 60% of the window width and 1000 pixels
-    maxHeight = Math.min(window.innerWidth * 0.6, 1080);
+    maxHeight = Math.min(window.innerWidth * 0.6, 1000);
   } else {
     // Calculate the maximum height as the minimum value between 60% of the window width and 1080 pixels
-    maxHeight = Math.min(window.innerWidth * 0.6, 1000);
+    maxHeight = Math.min(window.innerWidth * 0.6, 1080);
   }
 
   // Set the maximum height of the parallax container using the calculated maxHeight
