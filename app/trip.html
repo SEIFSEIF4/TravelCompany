@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><script defer src="/app.js"></script><script defer src="/trip.js"></script><link href="/assets/css/style.css" rel="stylesheet"></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+    <title>الجولة السياحية</title>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <header class="header">
+      <navBar class="navbar navbar-expand-lg fixed-top" id="navbar">  <div class="container">
+    <a class="navbar-brand d-flex" href="#"><img id="logo" src="../assets/images/Logo.png" width="50"> <span id="brandText" class="hidden">سفرني</span> </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./trip.html"
+            >الجولة السياحية</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#service">خدماتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#towns">اماكن سياحية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#tours">جولاتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#contanct">تواصل معانا</a>
+        </li>
+      </ul>
+      <div class="login">
+        <i class="fa-solid fa-user"></i>
+        <div class="login-container">
+          <a href="./login.html" class="button">تسجيل الدخول</a>
+        </div>
+      </div>
+      <div class="login-button">
+        <a href="./login.html" class="button">تسجيل الدخول</a>
+      </div>
+    </div>
+  </div>
+
+</navBar>
+      <div class="trip-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+          <div class="overlay">
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-istanbul active">
+              <img
+                src="/assets/images/trip-2.jpg"
+                class="d-block w-100"
+              />
+              <div class="carousel-text">
+                <h1>اسطنبول</h1>
+              </div>
+            </div>
+            <div class="carousel-item carousel-cairo">
+              <img
+                src="/assets/images/trip-1.jpg"
+                class="d-block w-100"
+              />
+              <div class="carousel-text">
+                <h1>الاهرامات</h1>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="gallery-section">
+        <div class="text-heading">
+          <h1>معرض الصور</h1>
+          <p>
+            اختر الجولة السياحية التي تريد مشاهدة صورها
+          </p>
+          <div class="choose text-center">
+            <a id="istanbulGallery" class="chose">اسطنبول</a>
+            <a id="allGallery" class="chose active">جميع الصور</a>
+            <a id="cairoGallery" class="chose">القاهرة</a>
+        </div>
+        </div>
+
+        <div class="gallery-container" id="galleryContainer">
+          <div class="gallery gallery-cairo">
+            <div class="gallery__item gallery__item--hor">
+              <img
+                src="/assets/images/cairo-gallery-0.jpeg"
+                alt="Cairo Gallery 0"
+                loading="lazy"
+                data-blurhash="BlurHashValue1"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-1.jpg"
+                alt="Cairo Gallery 1"
+                loading="lazy"
+                data-blurhash="BlurHashValue2"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-2.jpg"
+                alt="Cairo Gallery 2"
+                loading="lazy"
+                data-blurhash="BlurHashValue3"
+              />
+            </div>
+            <div class="gallery__item gallery__item--vert">
+              <img
+                src="/assets/images/cairo-gallery-3.jpg"
+                alt="Cairo Gallery 3"
+                loading="lazy"
+                data-blurhash="BlurHashValue4"
+              />
+            </div>
+            <div class="gallery__item gallery__item--lg">
+              <img
+                src="/assets/images/cairo-gallery-4.jpg"
+                alt="Cairo Gallery 4"
+                data-blurhash="BlurHashValue5"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-5.jpg"
+                alt="Cairo Gallery 5"
+                loading="lazy"
+                data-blurhash="BlurHashValue6"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-6.jpg"
+                alt="Cairo Gallery 6"
+                loading="lazy"
+                data-blurhash="BlurHashValue7"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-7.jpg"
+                alt="Cairo Gallery 7"
+                loading="lazy"
+                data-blurhash="BlurHashValue8"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-8.jpg"
+                alt="Cairo Gallery 8"
+                loading="lazy"
+                data-blurhash="BlurHashValue9"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/cairo-gallery-9.jpeg"
+                alt="Cairo Gallery 9"
+                loading="lazy"
+                data-blurhash="BlurHashValue10"
+              />
+            </div>
+          </div>
+          <div class="gallery gallery-istanbul">
+            <div class="gallery__item gallery__item--hor">
+              <img
+                src="/assets/images/gallery-0.jpg"
+                alt="Istanbul-Gallery 0"
+                loading="lazy"
+                data-blurhash="BlurHashValue11"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-1.jpg"
+                alt="Istanbul-Gallery 1"
+                loading="lazy"
+                data-blurhash="BlurHashValue12"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-2.jpg"
+                alt="Istanbul-Gallery 2"
+                loading="lazy"
+                data-blurhash="BlurHashValue13"
+              />
+            </div>
+            <div class="gallery__item gallery__item--vert">
+              <img
+                src="/assets/images/gallery-3.jpg"
+                alt="Istanbul-Gallery 3"
+                loading="lazy"
+                data-blurhash="BlurHashValue14"
+              />
+            </div>
+            <div class="gallery__item gallery__item--lg">
+              <img
+                src="/assets/images/gallery-4.jpg"
+                alt="Istanbul-Gallery 4"
+                data-blurhash="BlurHashValue15"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-5.jpg"
+                alt="Istanbul-Gallery 5"
+                loading="lazy"
+                data-blurhash="BlurHashValue16"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-6.jpg"
+                alt="Istanbul-Gallery 6"
+                loading="lazy"
+                data-blurhash="BlurHashValue17"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-7.jpeg"
+                alt="Istanbul-Gallery 7"
+                loading="lazy"
+                data-blurhash="BlurHashValue18"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-8.jpeg"
+                alt="Istanbul-Gallery 8"
+                loading="lazy"
+                data-blurhash="BlurHashValue19"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="/assets/images/gallery-9.jpeg"
+                alt="Istanbul-Gallery 9"
+                loading="lazy"
+                data-blurhash="BlurHashValue20"
+              />
+            </div>
+          </div>
+        </div>        
+      </section>
+    </main>
+    <footer class="footer-basic"><div class="social">
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+</div>
+<ul class="list-inline">
+  <li class="list-inline-item"><a href="./">الصفحة الرئيسية</a></li>
+  <li class="list-inline-item"><a href="./index.html#towns">خدماتنا</a></li>
+  <li class="list-inline-item"><a href="index.html#tours">جولاتنا</a></li>
+  <li class="list-inline-item">
+    <a href="./trip.html#galleryContainer">معرض الصور</a>
+  </li>
+  <li class="list-inline-item"><a href="#">سياسة الخصوصية</a></li>
+</ul>
+<p class="copyright">
+  جميع الحقوق محفوظة سنة
+  <span id="currentYear"></span>
+</p>
+</footer>
+  </body>
+</html>
